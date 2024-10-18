@@ -1,0 +1,477 @@
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1;
+
+}
+
+.term {
+    position: relative;
+}
+
+.term::before {
+ 
+    position: absolute;
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    background-color: aqua;
+    height: 3px;
+    width: 100%;
+
+    transition: all .5s ease;
+    transform: scaleX(0);
+}
+
+.term:hover::before {
+    transform: scaleX(1);
+    text-shadow: 0px 0px 30px aqua;
+}
+
+.nav {
+    backdrop-filter: blur(1px);
+    box-shadow: 0px 0px 10px;
+  
+
+}
+@media all and (max-width:640px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0px;
+    }
+    ul{
+        text-align: center;
+        display: none;
+    }
+    .mine{
+align-self: flex-start;
+margin: 10px 0px 0px 30px;
+    }
+}
+
+.menuline{
+    height: 3px;
+    width: 20px;
+    background-color: aqua;
+    margin-bottom: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+.terminal a {
+    font-weight: bold;
+    color: aqua;
+    text-decoration: none;
+    text-shadow: 0px 0px 2px white;
+}
+
+.terminal a:hover {
+
+    text-shadow: 0px 0px 15px aqua;
+    color: red;
+}
+
+.background {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cmd {
+    position: relative;
+    height: 100vh;
+
+}
+
+.cmd {
+    position: relative;
+    height: 90vh;
+    top: 20;
+    left: 0;
+    width: 100%;
+
+}
+
+.iam span {
+    position: relative;
+    margin-left: 1%;
+    color: aqua;
+}
+
+.name {
+    text-shadow: 0px 0px 15px aqua;
+}
+
+.mine h3 {
+    color: white;
+    font-weight: bolder;
+
+}
+
+.iam span::before {
+    content: "Web Developer";
+    animation: words 10s infinite;
+}
+
+.iam span::after {
+    content: "";
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color: #0a1915;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 15s steps(19) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid rgb(45, 255, 45);
+    }
+}
+
+@keyframes words {
+
+    0%,
+    25% {
+        content: "Web Developer";
+    }
+
+    26%,
+    50% {
+        content: "Designer";
+    }
+
+    51%,
+    75% {
+        content: "FullStack Developer";
+    }
+
+    76%,
+    100% {
+        content: "Gamer";
+    }
+}
+
+.mine h3:hover {
+    text-shadow: 0px 0px 5px rgb(0, 255, 0);
+    cursor: pointer;
+}
+
+@media(min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.aa {
+    height: 100vh;
+}
+
+.icon {
+    background-color: black;
+    border: 1px solid aqua;
+    box-shadow: 0px 0px 10px aqua;
+}
+
+.icon a {
+
+    color: white;
+}
+
+.icon:hover {
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+
+.abt {
+    height: 100%;
+    background-color: rgb(3, 32, 58);
+    width: 100%;
+    color: white;
+
+}
+
+.line23 {
+
+    height: 5px;
+
+    border-radius: 2px;
+    margin-left: 45%;
+    margin-right: 45%;
+    background-color: rgb(29, 105, 135);
+}
+
+.abt1 {
+    background-color: rgb(3, 32, 58);
+    background: linear-gradient(black, navy, );
+    height: 100%;
+
+}
+
+
+.para1 {
+    text-align: justify;
+    font-size: large;
+
+}
+
+.abtimg {
+    box-shadow: aqua;
+}
+
+.skilling {
+    background-color: aqua;
+    color: red;
+    padding: 15px;
+
+}
+
+.omega {
+    background-color: aqua;
+}
+
+
+.abtw {
+    height: 100%;
+}
+
+.line55 {
+    background-color: red;
+    height: 5px;
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-radius: 5px;
+}
+
+.line28 {
+    margin: 5px;
+    height: 5px;
+
+    margin-left: 45%;
+    margin-right: 45%;
+    background-color: aqua;
+
+}
+
+.teamh {
+    background-color: rgb(4, 50, 91);
+    color: red;
+    text-shadow: 0px 0px 2px aqua;
+}
+
+.progress:hover {
+    box-shadow: 0px 0px 10px red;
+}
+
+.card-wrapper {
+    display: flex;
+}
+
+
+.card {
+    margin: 0 .5em;
+    width: calc(100%/3);
+}
+
+.box1 {
+    margin-left: 450px;
+    padding: 50px;
+}
+.cards-wraper {
+    display: flex;
+}
+
+
+
+.card {
+width: 100%;
+box-shadow: 0 0 10px aqua;
+border-radius: 25px;
+
+
+}
+.card:hover{
+transition: .5s;
+transform: scale(1.01);
+}
+.image-wrapper:hover img{
+transform: scale(1.05);
+}
+.image-wrapper{
+overflow: hidden;
+}
+.image-wrapper img {
+height: 340px;
+transition: 0.8s; 
+}
+.card-body a{
+background-color: aqua;
+color: white;
+font-family: poppins;
+box-shadow: 0 0 10px aqua;
+
+}
+.card-body a:hover{
+background-color: navy;
+background-color: lightblue;
+border: 1px solid blue;
+transition: .5s;
+
+}
+
+
+.container25 {
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://perustat.com/wp-content/uploads/2020/06/contact-background.jpg") no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.container25 form {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.container25 form h1 {
+    color: aqua;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+    text-shadow: 0px 0px 15px aqua;
+}
+
+.container25 form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container25 form input::placeholder {
+    color: aqua;
+}
+
+.container25 form #lastName,
+.container25 form #mobile {
+    margin-left: 20px;
+}
+
+.container25 form h4 {
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container25 form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.container25 form #button {
+    border: none;
+    background: aqua;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: red;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.container25 form #button:hover {
+    opacity: 0.7;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    background: rgb(18, 187, 133);
+    min-height: 500px;
+    padding: 20px 50px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ; 
+    text-decoration: none; 
+}
+
+.social-icon,menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+
+    
+}
+
+.menu{
+font-size: 25px;
+text-decoration: none;
+}
+
+.social-icon{
+    font-size: 35px;
+}
+
+.pet{
+    font-size: 15px;
+
+}
